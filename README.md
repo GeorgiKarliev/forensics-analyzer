@@ -73,60 +73,19 @@ The project follows the following high-level workflow:
 ```text
 
 Forensic Image
-
-     |
-
-     v
-
-Evidence Validation
-
-     |
-
-     v
-
-SHA-256 Hash Calculation
-
-     |
-
-     v
-
-Automated Forensic Analysis
-
-     |
-
-     +----> Foremost File Carving
-
-     |
-
-     +----> Binwalk Analysis
-
-     |
-
-     +----> Bulk Extractor
-
-     |
-
-     +----> Network Artifact Search
-
-     |
-
-     +----> String Extraction
-
-     |
-
-     +----> Volatility Memory Analysis
-
-     |
-
-     v
-
-Generate Analysis Report
-
-     |
-
-     v
-
-Archive Results
+│
+├── Evidence Validation
+│   └── SHA-256 Hash Calculation
+│
+└── Automated Forensic Analysis
+    ├── Foremost File Carving
+    ├── Binwalk Analysis
+    ├── Bulk Extractor
+    ├── Network Artifact Search
+    ├── String Extraction
+    └── Volatility Memory Analysis
+        │
+        └── Generate Final Results
 
 ```
 
@@ -407,24 +366,18 @@ The Volatility analysis produces separate output files containing memory image i
 ```text
 
 forensics-analyzer/
-
 ├── .gitattributes
-
 ├── .gitignore
-
 ├── README.md
-
 ├── src/
-
 │   └── forensics-analyzer.sh
-
 ├── docs/
-
 │   └── forensics-analyzer-report.pdf
-
 └── images/
-
-   └── forensics-analyzer-output.png
+    ├── forensics-analyzer-execution.png
+    ├── forensics-analyzer-results.png
+    ├── forensics-analyzer-output-structure.png
+    └── forensics-analyzer-volatility.png
 
 ```
 
@@ -610,7 +563,7 @@ Forensic evidence may contain confidential or personal information and should be
 
 
 
-*\*Completed training project\*\*
+**Completed training project**
 
 
 
