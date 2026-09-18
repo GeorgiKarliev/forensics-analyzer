@@ -1,0 +1,39 @@
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Forensic evidence / disk and memory images
+*.raw
+*.img
+*.dd
+*.dmp
+*.mem
+*.vmem
+*.E01
+*.e01
+
+# Generated analysis output
+Analysis_Results_*/
+analysis_results/
+output/
+results/
+
+# Archives
+*.zip
+*.7z
+*.rar
+*.tar
+*.gz
+
+# Sensitive / local files
+*.key
+*.pem
+credentials.txt
+secrets.txt
